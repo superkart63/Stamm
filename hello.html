@@ -10,12 +10,21 @@
             color:blue;
         }
     </style>
-</head>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('form').onsubmit = function(){
+            const name = document.querySelector('#name').value;
+            alert(`Hello, ${name}`);
+        };
+    });
+    </script>
 <body>
     <h1>Welcome to my Website!!</h1>
-    <h2>Hello!</h2>
-    <h1>Hello hallo</h1>
-    <h2>another heading made local</h2>
-    <h2>another smaller heading made on GITHUB</h2>
+    <form>
+
+        <input autofocus id=name placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+    
 </body>
 </html>
